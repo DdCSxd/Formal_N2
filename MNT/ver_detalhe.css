@@ -1,0 +1,65 @@
+* {
+    margin: 0; /* Remove as margens de todos os elementos */
+    padding: 0; /* Remove o padding de todos os elementos */
+    box-sizing: border-box; /* Inclui o padding e bordas nas dimensões do elemento */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo como Arial, com fallback para sans-serif */
+    background-image: url(imagens/fundo_dashboard.jpg); /* Define a imagem de fundo */
+    background-color: #555; /* Cor de fundo de fallback */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo da tela */
+    color: #fff; /* Define a cor do texto como branco */
+    text-align: center; /* Alinha o texto no centro */
+    display: flex; /* Usa o modelo de layout flexbox */
+    flex-direction: column; /* Organiza os itens dentro do flex container em coluna */
+    justify-content: center; /* Alinha os itens no centro verticalmente */
+    align-items: center; /* Alinha os itens no centro horizontalmente */
+    height: 150vh; /* Define a altura da página como 150% da altura da janela de visualização */
+}
+
+.container {
+    background-color: rgba(245, 245, 245, 0.7); /* Fundo semi-transparente branco */
+    padding: 50px; /* Espaçamento interno de 50px */
+    border-radius: 8px; /* Bordas arredondadas */
+    max-width: 600px; /* Largura máxima de 600px */
+    width: 100%; /* Largura total, mas com limite de 600px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave ao redor da caixa */
+}
+
+h1 {
+    font-size: 24px; /* Define o tamanho da fonte do título como 24px */
+    color: #000000; /* Cor do texto do título é preta */
+    text-align: center; /* Alinha o título ao centro */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.details p {
+    font-size: 16px; /* Tamanho da fonte para os parágrafos dentro da classe "details" */
+    line-height: 1.6; /* Define a altura da linha como 1.6 para melhorar a legibilidade */
+    margin-bottom: 8px; /* Espaçamento abaixo de cada parágrafo */
+    color: #000000; /* Cor do texto dos parágrafos é preta */
+}
+
+.details strong {
+    color: #000000; /* A cor do texto negrito dentro de "details" também é preta */
+}
+
+h2 {
+    font-size: 20px; /* Tamanho da fonte dos subtítulos */
+    color: #000000; /* Cor do texto dos subtítulos é preta */
+    margin-top: 20px; /* Espaço acima do subtítulo */
+    margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+    border-bottom: 2px solid #dcdcdc; /* Linha abaixo do subtítulo */
+    padding-bottom: 5px; /* Espaçamento abaixo da linha */
+}
+
+.details p:last-of-type {
+    margin-bottom: 0; /* Remove o espaço inferior do último parágrafo */
+}
+
+.details p span {
+    color: #27ae60; /* Cor verde para os spans dentro de parágrafos */
+    font-weight: bold; /* Define os spans como texto em negrito */
+}

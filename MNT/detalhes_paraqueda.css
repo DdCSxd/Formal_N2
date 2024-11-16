@@ -1,0 +1,58 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada como Arial */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Estiliza a tabela */
+table {
+    width: 100%; /* Define a tabela para ocupar 100% da largura do elemento pai */
+    margin-top: 20px; /* Adiciona um espaçamento acima da tabela */
+    border-collapse: collapse; /* Remove o espaço entre as bordas das células */
+}
+
+/* Estiliza as células da tabela (tanto cabeçalhos quanto dados) */
+th, td {
+    padding: 10px; /* Adiciona espaçamento interno nas células */
+    border: 1px solid #ddd; /* Adiciona uma borda fina de cor cinza claro */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estiliza as linhas ímpares do cabeçalho da tabela */
+thead tr:nth-child(odd) th {
+    background-color: rgba(0, 0, 0, 0.3); /* Aplica uma cor de fundo preta com transparência */
+}
+
+/* Estiliza as linhas pares do cabeçalho da tabela */
+thead tr:nth-child(even) th {
+    background-color: #c0c0c0; /* Aplica uma cor cinza claro */
+}
+
+/* Estiliza as linhas ímpares do corpo da tabela */
+tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.3); /* Aplica uma cor de fundo preta com transparência */
+}
+
+/* Estiliza as linhas pares do corpo da tabela */
+tr:nth-child(even) {
+    background-color: #ffffff; /* Aplica uma cor de fundo branca */
+}
+
+/* Estiliza o botão */
+.button {
+    padding: 8px 16px; /* Adiciona espaçamento interno ao botão */
+    background-color: #000000; /* Define a cor de fundo como preto */
+    color: #fff; /* Define a cor do texto como branca */
+    text-decoration: none; /* Remove o sublinhado do texto */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+    border: none; /* Remove borda padrão */
+    margin-top: 20px; /* Adiciona espaçamento acima do botão */
+    display: inline-block; /* Faz com que o botão se comporte como um elemento inline com altura e largura configuráveis */
+    transition: background 0.3s; /* Cria uma transição suave na mudança de cor de fundo */
+}
+
+/* Estiliza o botão ao passar o mouse */
+.button:hover {
+    background-color: #eeea06; /* Altera a cor de fundo para amarelo ao passar o mouse */
+}

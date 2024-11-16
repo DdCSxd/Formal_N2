@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo da página. */
+    text-align: center; /* Centraliza o texto na página. */
+    background-image: url(imagens/night_edt.png); /* Define a imagem de fundo da página. */
+    background-color: #ffffff; /* Define a cor de fundo para branco, caso a imagem de fundo não seja carregada. */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita. */
+    background-size: cover; /* A imagem de fundo será ajustada para cobrir toda a área da tela. */
+    color: #fff; /* Define a cor do texto como branca. */
+    padding: 20px; /* Adiciona um espaçamento de 20px ao redor do conteúdo da página. */
+}
+
+table {
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível da tela. */
+    margin-top: 20px; /* Adiciona uma margem superior de 20px à tabela. */
+    border-collapse: collapse; /* Faz as bordas da tabela se unirem, sem espaços entre elas. */
+}
+
+th, td {
+    padding: 10px; /* Adiciona 10px de espaçamento dentro de cada célula (th e td). */
+    border: 1px solid #000000; /* Adiciona uma borda preta ao redor de cada célula da tabela. */
+    text-align: left; /* Alinha o conteúdo das células à esquerda. */
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semitransparente (50%) à célula do cabeçalho da tabela. */
+}
+
+input[type="submit"] {
+    padding: 8px 12px; /* Define um espaçamento interno de 8px para a parte superior e inferior, e 12px para os lados no botão de submit. */
+    margin-top: 10px; /* Adiciona uma margem superior de 10px ao botão. */
+}
+
+.button {
+    text-decoration: none; /* Remove qualquer sublinhado do texto do botão. */
+    color: #ffffff; /* Define a cor do texto do botão como branco. */
+    background-color: #020202; /* Define a cor de fundo do botão como um tom muito escuro de cinza/preto. */
+    padding: 10px 20px; /* Adiciona 10px de espaçamento vertical e 20px de espaçamento horizontal dentro do botão. */
+    margin-top: 20px; /* Adiciona uma margem superior de 20px ao botão. */
+    display: inline-block; /* Faz o botão se comportar como um elemento inline (mas com a capacidade de adicionar margens e preencher uma área). */
+    border-radius: 4px; /* Torna os cantos do botão arredondados com um raio de 4px. */
+    transition: background 0.3s; /* Adiciona uma transição suave de 0.3 segundos para mudanças no fundo do botão. */
+}
+
+.button:hover {
+    background-color: #eedf14; /* Altera a cor de fundo do botão quando o usuário passa o mouse sobre ele para um tom amarelo. */
+}
+

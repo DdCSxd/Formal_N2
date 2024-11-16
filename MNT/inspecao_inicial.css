@@ -1,0 +1,120 @@
+/* Define o estilo geral do corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão da página */
+    padding: 0; /* Remove o preenchimento (padding) da página */
+    font-family: Arial, sans-serif; /* Define a fonte usada no corpo do texto */
+    background-image: url(imagens/fundo_dashboard.jpg); /* Define uma imagem de fundo */
+    background-color: #555; /* Define uma cor de fundo em caso de erro no carregamento da imagem */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a tela */
+    color: #fff; /* Define a cor do texto como branca */
+    text-align: center; /* Centraliza o texto na tela */
+    display: flex; /* Usa o modelo Flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos de forma vertical */
+    justify-content: center; /* Alinha os elementos no centro da tela verticalmente */
+    align-items: center; /* Alinha os elementos no centro da tela horizontalmente */
+    height: 200vh; /* Define a altura da página como 150% da altura da tela (faz a página ficar mais alta que a tela) */
+}
+
+/* Define o estilo do título (h1) */
+h1 {
+    color: #333; /* Define a cor do título como cinza escuro */
+    font-weight: bold; /* Torna o título em negrito */
+}
+
+/* Define o estilo para o parágrafo (p) */
+p {
+    color: #666; /* Define a cor do texto como cinza claro */
+}
+
+/* Define o estilo do formulário */
+form {
+    background-color: rgba(245, 245, 245, 0.5); /* Define um fundo claro e semitransparente para o formulário */
+    padding: 40px; /* Adiciona um espaço interno de 50px ao redor do conteúdo */
+    border-radius: 8px; /* Arredonda os cantos do formulário */
+    max-width: 600px; /* Define a largura máxima do formulário */
+    width: 80%; /* O formulário pode ter no máximo 100% da largura disponível */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do formulário */
+}
+
+/* Define o estilo das etiquetas (labels) */
+label {
+    color: #333; /* Define a cor das etiquetas como cinza escuro */
+    font-weight: bold; /* Torna as etiquetas em negrito */
+    display: block; /* Faz com que cada etiqueta ocupe uma linha inteira */
+    margin-top: 15px; /* Adiciona um espaço acima de cada etiqueta */
+}
+
+/* Define o estilo dos campos de entrada de texto, número, data e texto (textarea) */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%; /* Define que os campos irão ocupar toda a largura disponível */
+    padding: 10px; /* Adiciona preenchimento de 10px dentro dos campos */
+    margin-top: 5px; /* Adiciona um espaço acima dos campos */
+    margin-bottom: 15px; /* Adiciona um espaço abaixo dos campos */
+    border: 1px solid #ccc; /* Define uma borda leve e cinza para os campos */
+    border-radius: 4px; /* Arredonda os cantos dos campos */
+    background-color: #fafafa; /* Define um fundo bem claro para os campos */
+    color: #333; /* Define a cor do texto dentro dos campos como cinza escuro */
+}
+
+/* Permite que o campo de texto (textarea) seja redimensionado verticalmente */
+textarea {
+    resize: vertical; 
+}
+
+/* Define o estilo para o grupo de checkboxes */
+.checkbox-group {
+    margin: 10px 0; /* Adiciona espaço acima e abaixo do grupo de checkboxes */
+}
+
+/* Define o estilo para os campos que ficam ocultos (exibidos com base nas opções escolhidas) */
+.hidden-fields {
+    display: none; /* Esconde os campos inicialmente */
+    margin-top: 10px; /* Adiciona um espaço acima dos campos ocultos */
+    padding-left: 15px; /* Adiciona um preenchimento à esquerda */
+    color: #555; /* Define a cor do texto como cinza */
+    font-size: 0.9em; /* Reduz o tamanho da fonte dos campos ocultos */
+}
+
+/* Define o estilo dos botões */
+.button {
+    background-color: #000000; /* Define a cor de fundo do botão como preto */
+    color: #fff; /* Define a cor do texto do botão como branca */
+    padding: 12px 25px; /* Adiciona preenchimento dentro do botão */
+    font-size: 16px; /* Define o tamanho da fonte do texto no botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha quando passar sobre o botão */
+    text-decoration: none; /* Remove qualquer decoração (como sublinhado) do botão */
+    margin-top: 10px; /* Adiciona um espaço acima do botão */
+    display: inline-block; /* Faz o botão se comportar como um bloco, mas não ocupar toda a largura */
+    text-align: center; /* Alinha o texto do botão ao centro */
+}
+
+/* Define o estilo quando o botão é passado o mouse por cima */
+.button:hover {
+    background-color: #000000; /* Muda a cor de fundo do botão para preto quando o mouse está sobre ele */
+}
+
+/* Define o estilo para as etiquetas dentro do grupo de checkboxes */
+.checkbox-group label {
+    display: flex; /* Usa Flexbox para alinhar o conteúdo da etiqueta */
+    align-items: center; /* Alinha os itens dentro da etiqueta (como o texto e o checkbox) ao centro verticalmente */
+}
+
+/* Define o estilo do checkbox dentro da etiqueta */
+.checkbox-group label input {
+    margin-right: 8px; /* Adiciona um espaço à direita do checkbox */
+}
+
+/* Define o estilo do rodapé */
+footer {
+    width: 100%; /* O rodapé ocupa toda a largura da tela */
+    padding: 1px 0; /* Adiciona um pequeno preenchimento acima e abaixo */
+    bottom: 0; /* Coloca o rodapé na parte inferior da tela */
+    left: 0; /* Alinha o rodapé à esquerda */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+}

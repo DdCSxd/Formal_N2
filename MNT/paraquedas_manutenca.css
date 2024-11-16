@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;  /* Define a fonte da página como Arial, e se não estiver disponível, usa uma fonte genérica sans-serif. */
+    text-align: center;  /* Alinha o texto no centro da página. */
+    padding: 20px;  /* Adiciona 20px de espaço interno (padding) ao redor do conteúdo dentro do body. */
+    background-image: url(imagens/night_edt.png);  /* Define uma imagem de fundo para a página, localizada no caminho 'imagens/night_edt.png'. */
+    background-color: #ffffff;  /* Define a cor de fundo da página como branco (#ffffff). */
+    background-repeat: no-repeat;  /* Impede que a imagem de fundo seja repetida caso seja menor que a tela. */
+    background-size: cover;  /* Ajusta a imagem de fundo para cobrir toda a tela, sem distorções. */
+    color: #fff;  /* Define a cor do texto como branco (#fff). */
+}
+
+table {
+    width: 100%;  /* Define a largura da tabela como 100% da largura disponível da tela. */
+    margin-top: 20px;  /* Adiciona um espaço de 20px acima da tabela. */
+    border-collapse: collapse;  /* Faz com que as bordas da tabela sejam unidas, ou seja, sem espaços entre elas. */
+    color: #ffffff;  /* Define a cor do texto dentro da tabela como branco. */
+}
+
+th, td {
+    padding: 10px;  /* Adiciona 10px de espaço interno em cada célula da tabela, tanto nas colunas de cabeçalho (th) quanto nas de dados (td). */
+    border: 1px solid #ddd;  /* Define uma borda de 1px, de cor cinza-claro (#ddd), para as células da tabela. */
+    text-align: left;  /* Alinha o texto dentro das células da tabela à esquerda. */
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.5);  /* Define o fundo das células de cabeçalho (th) com uma cor preta semitransparente (50% de opacidade). */
+}
+
+.button {
+    text-decoration: none;  /* Remove qualquer decoração de texto, como sublinhado, de links. */
+    color: #000000;  /* Define a cor do texto do botão como preta (#000000). */
+    background-color: #ffffff;  /* Define a cor de fundo do botão como branca. */
+    padding: 10px 20px;  /* Adiciona 10px de espaçamento vertical e 20px de espaçamento horizontal dentro do botão. */
+    margin-top: 20px;  /* Adiciona um espaço de 20px acima do botão. */
+    display: inline-block;  /* Faz com que o botão se comporte como um bloco inline (não ocupa toda a largura disponível). */
+    border-radius: 4px;  /* Adiciona cantos arredondados ao botão com um raio de 4px. */
+    transition: background 0.3s;  /* Faz com que a mudança de cor de fundo do botão aconteça suavemente ao longo de 0,3 segundos. */
+    border-bottom: 15%;  /* Adiciona uma borda inferior de 15%, mas isso não é uma prática comum e provavelmente está com um erro, pois a propriedade "border-bottom" normalmente define a espessura da borda. */
+}
+
+.button:hover {
+    background-color: #eedf14;  /* Altera a cor de fundo do botão para amarelo (#eedf14) quando o usuário passa o mouse sobre ele. */
+}

@@ -1,0 +1,67 @@
+/* Define os estilos globais para a página */
+body {
+    margin: 0; /* Remove as margens padrão do corpo da página */
+    padding: 0; /* Remove o espaçamento interno padrão do corpo */
+    font-family: Arial, sans-serif; /* Define a fonte principal para o texto */
+    background-image: url(imagens/fundo_dashboard.jpg); /* Aplica uma imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área da página */
+    color: #fff; /* Define a cor do texto como branco */
+    text-align: center; /* Alinha o texto ao centro horizontalmente */
+    display: flex; /* Habilita o layout flexbox para o corpo */
+    flex-direction: column; /* Organiza os elementos do corpo em uma coluna */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    height: 100vh; /* Define a altura do corpo como 100% da altura da janela */
+}
+
+/* Estilos para o contêiner de conteúdo */
+.content {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+}
+
+/* Estilos para o título (h1) dentro do contêiner */
+.content h1 {
+    font-size: 1.8em; /* Define o tamanho da fonte do título */
+    color: #000000; /* Define a cor do texto do título como preto */
+}
+
+/* Estilos para o parágrafo (p) dentro do contêiner */
+.content p {
+    font-size: 1em; /* Define o tamanho da fonte do parágrafo */
+    color: #242323; /* Define a cor do texto do parágrafo como cinza escuro */
+}
+
+/* Estilos para o contêiner dos botões */
+.button-container {
+    display: flex; /* Habilita o layout flexbox para os botões */
+    flex-direction: column; /* Organiza os botões em uma coluna */
+    align-items: center; /* Centraliza os botões horizontalmente */
+    background-color: rgba(34, 34, 34, 0.8); /* Define um fundo com transparência para o contêiner */
+    padding: 40px; /* Adiciona espaço interno ao redor dos botões */
+    border-radius: 10px; /* Arredonda os cantos do contêiner */
+    width: 300px; /* Define a largura do contêiner */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao contêiner */
+    margin-bottom: 80px; /* Adiciona espaçamento inferior ao contêiner */
+}
+
+/* Estilos para os botões */
+.button {
+    display: block; /* Faz o botão ocupar uma nova linha por padrão */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffffff; /* Define a cor do texto dos botões como branco */
+    background-color: #020202; /* Define a cor de fundo dos botões como preto */
+    font-size: 16px; /* Define o tamanho da fonte dos botões */
+    padding: 10px 20px; /* Define o espaçamento interno dos botões */
+    margin: 10px 0; /* Adiciona espaçamento vertical entre os botões */
+    width: 200px; /* Define a largura fixa dos botões */
+    text-align: center; /* Centraliza o texto dos botões */
+    border-radius: 4px; /* Arredonda levemente os cantos dos botões */
+    transition: background 0.3s; /* Adiciona uma transição suave ao fundo ao passar o mouse */
+}
+
+/* Efeito hover (passar o mouse) nos botões */
+.button:hover {
+    background-color: #cff108; /* Altera a cor de fundo para verde claro ao passar o mouse */
+}

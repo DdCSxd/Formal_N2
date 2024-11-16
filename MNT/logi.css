@@ -1,0 +1,105 @@
+body {
+    margin: 0;  /* Remove qualquer margem padrão ao redor da página */
+    padding: 0;  /* Remove qualquer espaçamento interno ao redor da página */
+    font-family: 'Roboto', sans-serif;  /* Define a fonte usada na página como 'Roboto' */
+    background-image: url(imagens/pexels-pixabay-38447-1024x683.webp);  /* Define uma imagem de fundo para a página */
+    background-repeat: no-repeat;  /* Impede que a imagem de fundo se repita */
+    background-size: cover;  /* Faz com que a imagem de fundo cubra toda a tela */
+    color: #fff;  /* Define a cor do texto como branco */
+    text-align: center;  /* Alinha o texto no centro da página */
+    display: flex;  /* Utiliza o modelo de layout Flexbox para organizar os elementos */
+    flex-direction: column;  /* Organiza os elementos filhos na vertical (coluna) */
+    justify-content: center;  /* Centraliza os elementos no eixo vertical */
+    align-items: center;  /* Centraliza os elementos no eixo horizontal */
+    height: 100vh;  /* Define a altura da página como 100% da altura da tela */
+    position: relative;  /* Define a posição do corpo como relativa, para permitir que outros elementos sejam posicionados em relação a ele */
+}
+
+header {
+    width: 100%;  /* Faz o cabeçalho ocupar toda a largura da página */
+    background-color: rgba(34, 34, 34, 0.8);  /* Define a cor de fundo do cabeçalho com uma transparência de 80% */
+    position: fixed;  /* Faz o cabeçalho ficar fixo no topo da página enquanto rola */
+    top: 0;  /* Posiciona o cabeçalho no topo da página */
+    left: 0;  /* Posiciona o cabeçalho na borda esquerda da página */
+    text-align: center;  /* Centraliza o conteúdo dentro do cabeçalho */
+}
+
+header h1 {
+    color: #ffcc00;  /* Define a cor do texto como amarelo dourado */
+    font-size: 24px;  /* Define o tamanho da fonte como 24 pixels */
+    margin: 0;  /* Remove qualquer margem ao redor do título */
+}
+
+footer {
+    width: 100%;  /* Faz o rodapé ocupar toda a largura da página */
+    background-color: rgba(34, 34, 34, 0.8);  /* Define a cor de fundo do rodapé com 80% de transparência */
+    padding: 10px 0;  /* Adiciona um espaçamento interno de 10 pixels na parte superior e inferior do rodapé */
+    position: fixed;  /* Faz o rodapé ficar fixo na parte inferior da página enquanto rola */
+    bottom: 0;  /* Posiciona o rodapé na parte inferior da página */
+    left: 0;  /* Posiciona o rodapé na borda esquerda da página */
+    text-align: center;  /* Centraliza o conteúdo dentro do rodapé */
+}
+
+footer p {
+    color: #ffcc00;  /* Define a cor do texto como amarelo dourado */
+    font-size: 16px;  /* Define o tamanho da fonte como 16 pixels */
+    margin: 0;  /* Remove qualquer margem ao redor do texto */
+}
+
+.logo-container {
+    margin-top: 60px;  /* Adiciona um espaçamento de 60 pixels acima do container da logo */
+}
+
+.login-container {
+    background-color: rgba(34, 34, 34, 0.8);  /* Define a cor de fundo do container de login com 80% de transparência */
+    padding: 40px;  /* Adiciona 40 pixels de espaçamento interno ao redor do conteúdo */
+    border-radius: 10px;  /* Define cantos arredondados de 10 pixels para o container */
+    width: 300px;  /* Define a largura do container de login como 300 pixels */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  /* Adiciona uma sombra suave ao redor do container para destacá-lo */
+    margin-bottom: 80px;  /* Adiciona 80 pixels de espaçamento abaixo do container de login */
+}
+
+.login-container h2 {
+    color: #ffcc00;  /* Define a cor do título dentro do container de login como amarelo dourado */
+    font-size: 28px;  /* Define o tamanho da fonte como 28 pixels */
+    margin-bottom: 20px;  /* Adiciona 20 pixels de margem abaixo do título */
+}
+
+.error-message {
+    color: red;  /* Define a cor do texto de erro como vermelho */
+    font-size: 14px;  /* Define o tamanho da fonte do erro como 14 pixels */
+    margin-bottom: 10px;  /* Adiciona 10 pixels de margem abaixo da mensagem de erro */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;  /* Faz com que os campos de entrada ocupem toda a largura do container */
+    padding: 10px;  /* Adiciona 10 pixels de espaçamento interno nos campos de entrada */
+    margin-bottom: 15px;  /* Adiciona 15 pixels de margem abaixo dos campos de entrada */
+    border-radius: 5px;  /* Define cantos arredondados de 5 pixels nos campos de entrada */
+    border: none;  /* Remove a borda padrão dos campos de entrada */
+    font-size: 16px;  /* Define o tamanho da fonte nos campos de entrada como 16 pixels */
+}
+
+.botao {
+    width: 100%;  /* Faz com que o botão ocupe toda a largura do container */
+    padding: 10px;  /* Adiciona 10 pixels de espaçamento interno ao redor do botão */
+    background-color: #ffcc00;  /* Define a cor de fundo do botão como amarelo dourado */
+    color: #000;  /* Define a cor do texto do botão como preto */
+    border: none;  /* Remove a borda padrão do botão */
+    border-radius: 5px;  /* Define cantos arredondados de 5 pixels no botão */
+    cursor: pointer;  /* Muda o cursor para um ponteiro ao passar o mouse sobre o botão */
+    font-size: 16px;  /* Define o tamanho da fonte do botão como 16 pixels */
+    transition: background-color 0.3s;  /* Adiciona uma transição suave de 0.3 segundos na mudança da cor de fundo */
+}
+
+.botao:hover {
+    background-color: #ffd633;  /* Altera a cor de fundo para um tom mais claro de amarelo quando o botão é pressionado */
+}
+
+@media screen and (max-width: 600px) {
+    .login-container {
+        width: 100%;  /* Faz o container de login ocupar toda a largura da tela em dispositivos com largura menor que 600 pixels */
+        margin: 20px;  /* Adiciona 20 pixels de margem ao redor do container */
+    }
+}

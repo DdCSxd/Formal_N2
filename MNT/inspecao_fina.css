@@ -1,0 +1,65 @@
+/* Estilo global para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Adiciona espaçamento de 20px nas bordas da página */
+    background-image: url(imagens/night_edt.png); /* Define uma imagem de fundo */
+    background-color: #ffffff; /* Define uma cor de fundo branca */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área disponível */
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Estilo para as tabelas */
+table {
+    width: 100%; /* A tabela ocupa toda a largura disponível */
+    margin-top: 20px; /* Adiciona 20px de espaçamento superior */
+    border-collapse: collapse; /* Elimina espaços entre as bordas das células */
+}
+
+/* Estilo para células da tabela */
+th, td {
+    padding: 10px; /* Adiciona 10px de espaçamento nas células */
+    border: 1px solid #ddd; /* Borda cinza claro para as células */
+    text-align: left; /* Alinha o texto à esquerda nas células */
+}
+
+/* Estilo para o botão de exclusão */
+.delete-button {
+    background-color: red; /* Cor de fundo vermelha */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #ffffff; /* Cor do texto do botão é branca */
+    border-radius: 15%; /* Borda arredondada */
+}
+
+/* Estilo para o cabeçalho da tabela */
+th {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo preta semitransparente */
+    color: white; /* Cor do texto em branco */
+}
+
+/* Estilo para inputs do tipo "date" e botões */
+input[type="date"],
+input[type="submit"],
+.delete-button {
+    padding: 8px; /* Adiciona 8px de espaçamento interno */
+    margin-top: 10px; /* Adiciona 10px de margem superior */
+}
+
+/* Estilo para o botão principal */
+.button {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #ffffff; /* Cor do texto do botão é branca */
+    background-color: #000000; /* Cor de fundo preta */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    margin-top: 20px; /* Adiciona 20px de margem superior */
+    display: inline-block; /* Faz o botão ser exibido como um bloco em linha */
+    border-radius: 4px; /* Borda arredondada */
+    transition: background 0.3s; /* Efeito de transição suave ao passar o mouse */
+    border-bottom: 15%; /* Borda inferior arredondada */
+}
+
+/* Efeito de hover para o botão */
+.button:hover {
+    background-color: #eedf14; /* Muda a cor de fundo para amarelo quando o mouse passa por cima */
+}
